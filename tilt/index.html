@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassmorphism with Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="content">
+                <h2>01</h2>
+                <h3>Card One</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi sunt quas labore aliquid debitis. Adipisci molestiae at minima sequi ullam quis provident eos, voluptatibus quas, nemo amet facere in sint?</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h2>02</h2>
+                <h3>Card Two</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos explicabo aperiam cumque omnis. Vero qui bea, animi doloremque facilis tenetur consectetur. Dolores aspernatur repudiandae inventore eius dolorum!</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h2>03</h2>
+                <h3>Card Three</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, sit ipsam. Atque fugiat repellat veritatis voluptates error. Et, at a fugiat tempora ullam voluptatum facilis tempore consectetur minima, delectus itaque!</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </div>
+    <script src="vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"),
+        {
+            max:25,
+            speed:400,
+            glare:true,
+            "max-glare":1,
+        });
+    </script>
+</body>
+</html>
